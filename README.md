@@ -2,6 +2,11 @@
 
 Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V. Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
 
+## Lab index (start here)
+1. [Lab 01 — Build Domain Controller (Windows Server 2022)](labs/01-build-domain-controller.md)
+2. [Lab 02 — Join Client to Domain](labs/02-join-client.md)
+3. [Lab 03 — Basic AD Operations (Users, Groups, GPOs)](labs/03-basic-ad-ops.md)
+
 ## What this repo demonstrates
 - Building and configuring a Windows Server 2022 Domain Controller (AD DS + DNS)
 - Lab networking fundamentals (internal subnet, static IP, DNS pointing to DC)
