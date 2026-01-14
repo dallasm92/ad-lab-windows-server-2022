@@ -1,44 +1,50 @@
-# Active Directory Lab — Windows Server 2022 (Hyper-V)
+# Active Directory Lab (Windows Server 2022 + Hyper-V)
 
-Step-by-step Active Directory home lab on Windows Server 2022 (Hyper-V), documented with repeatable build notes, screenshots, and troubleshooting.
+Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V. Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
 
-## Repo Structure
+## What this repo demonstrates
+- Building and configuring a Windows Server 2022 Domain Controller (AD DS + DNS)
+- Lab networking fundamentals (internal subnet, static IP, DNS pointing to DC)
+- Domain join workflow for a client machine
+- Core AD operations: OUs, users, groups, and basic Group Policy
+- Documentation quality aligned with IT support / junior sysadmin expectations
 
-- docs/
-  - screenshot-rules.md
-  - screenshot-naming.md
-- screenshots/
-  - 01-vm-create/
-  - 02-install/
-  - 03-network/
-  - 04-ad-ds/
-  - 05-domain-join/
-  - 06-users-groups/
-  - 07-gpos/
-- labs/
-  - 01-build-domain-controller.md
-  - 02-join-client.md
-  - 03-basic-ad-ops.md
+## Repository layout
+- `docs/` — documentation standards
+  - `screenshot-rules.md`
+  - `screenshot-naming.md`
+- `screenshots/` — evidence organized by phase
+  - `01-vm-create/`
+  - `02-install/`
+  - `03-network/`
+  - `04-ad-ds/`
+  - `05-domain-join/`
+  - `06-users-groups/`
+  - `07-gpos/`
+- `labs/` — step-by-step lab writeups
+  - `01-build-domain-controller.md`
+  - `02-join-client.md`
+  - `03-basic-ad-ops.md`
 
-## Screenshot Safety Rules (Summary)
+## Screenshot safety (sanitization)
+Allowed:
+- VM settings and lab configuration screens
+- Internal IPs (e.g., `10.10.10.x`)
+- Lab domain names (e.g., `lab.local`)
 
-OK to show:
-- VM settings
-- Internal IPs like 10.10.10.x
-- Lab domain name like lab.local
+Do not publish:
+- Public IP addresses, Wi-Fi SSIDs, personal email addresses
+- License keys, serial numbers, hardware IDs
 
-Avoid:
-- Public IPs, Wi-Fi SSID
-- Personal emails
-- License keys, serial numbers
+If sensitive information appears:
+- Re-take the screenshot with the sensitive area hidden, or blur it before uploading.
 
-If sensitive info appears:
-- Blur it (Paint) or re-take with the area hidden.
-
-## Screenshot Naming
+## Screenshot naming convention
+Format:
+`<section>-<step>_<short-description>.png`
 
 Examples:
-- 01-01_hyperv-new-vm.png
-- 03-04_ipconfig-dc1.png
+- `01-01_hyperv-new-vm.png`
+- `03-04_ipconfig-dc1.png`
 
-See `docs/screenshot-naming.md` for full convention.
+See `docs/screenshot-naming.md` for the full convention.
