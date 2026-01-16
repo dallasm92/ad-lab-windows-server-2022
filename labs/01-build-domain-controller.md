@@ -105,6 +105,19 @@ Build a Windows Server 2022 Domain Controller in Hyper-V with **AD DS + DNS**, u
 
 ---
 
+## Validation (Post-Promotion)
+
+I verified core AD DS + DNS health on DC-1 after promotion.
+
+- DNS zones created and present in DNS Manager
+- ADUC loads and shows the `lab.local` domain
+- `dcdiag /test:DNS /v` passes for `lab.local`
+- PowerShell checks return expected domain/forest info:
+  - `Get-ADForest`
+  - `Get-ADDomain`
+
+--
+
 ## Notes / Next Labs
 
 - Lab 01 is complete once AD DS + DNS are installed, the server is promoted, and validation passes.
