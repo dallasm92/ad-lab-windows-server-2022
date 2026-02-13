@@ -2,6 +2,7 @@
 
 Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V.  
 Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
+Last reviewed: February 13, 2026
 
 ## Quick start (recommended order)
 
@@ -60,4 +61,3 @@ Examples:
 - `03-04_ipconfig-dc1.png`
 
 See `docs/screenshot-naming.md` for the full convention.
-
