@@ -2,7 +2,7 @@
 
 ## OK to show
 - VM settings (Hyper-V / VM hardware settings)
-- Internal IPs (e.g., 10.10.10.x)
+- Internal IPs (e.g., 198.51.100.x)
 - Lab domain name (e.g., lab.local)
 
 ## Avoid showing

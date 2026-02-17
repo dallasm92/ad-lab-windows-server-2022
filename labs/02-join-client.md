@@ -15,8 +15,8 @@ Join a Windows client VM to the `lab.local` domain and verify domain authenticat
 - Domain Controller: `DC-1` (Windows Server 2022)
 - Domain: `lab.local`
 - Client VM: `WIN11-CLIENT1`
-- Lab network: `10.10.10.0/24`
-- DNS on client: points to DC (`10.10.10.10`)
+- Lab network: `198.51.100.0/24`
+- DNS on client: points to DC (`198.51.100.10`)
 
 ## Evidence (Screenshots)
 - `screenshots/05-domain-join/`
@@ -28,7 +28,7 @@ On client PowerShell:
 
 ```powershell
 ipconfig /all
-ping 10.10.10.10
+ping 198.51.100.10
 nslookup lab.local
 ```
 

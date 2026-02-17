@@ -12,9 +12,9 @@ Build a Windows Server 2022 Domain Controller in Hyper-V with **AD DS + DNS**, u
 - Host: MAIN-PC (Windows 11 Pro, Hyper-V)
 - VM: DC-1 (Windows Server 2022 Standard, Desktop Experience)
 - Virtual Switch: vSwitch-LAB-Internal
-- Lab subnet: 10.10.10.0/24
-- Host vEthernet (internal vSwitch): 10.10.10.1/24
-- DC-1 IPv4: 10.10.10.10/24
+- Lab subnet: 198.51.100.0/24
+- Host vEthernet (internal vSwitch): 198.51.100.1/24
+- DC-1 IPv4: 198.51.100.10/24
 - Domain: lab.local
 - NetBIOS: LAB
 
@@ -57,13 +57,13 @@ Build a Windows Server 2022 Domain Controller in Hyper-V with **AD DS + DNS**, u
 </details>
 
 <details>
-<summary><strong>03 — Lab Network Configuration (10.10.10.0/24)</strong></summary>
+<summary><strong>03 — Lab Network Configuration (198.51.100.0/24)</strong></summary>
 
 - [03-01 — Local Server baseline](../screenshots/03-network/03-01_local-server-baseline.png) — Captured baseline state before network changes.
 - [03-02 — ipconfig shows APIPA](../screenshots/03-network/03-02_ipconfig-all-apipa.png) — VM initially had APIPA (no valid lab IP yet).
 - [03-03 — IPv4 static IP + DNS](../screenshots/03-network/03-03_ipv4-static-ip-dns.png) — Set DC-1 static IPv4 + DNS settings for the lab.
 - [03-04 — Ping host unreachable](../screenshots/03-network/03-04_ping-10-10-10-1-unreachable.png) — Initial connectivity failure captured as troubleshooting evidence.
-- [03-05 — Host vEthernet IP](../screenshots/03-network/03-05_host-vethernet-ip.png) — Verified host vEthernet is **10.10.10.1/24**.
+- [03-05 — Host vEthernet IP](../screenshots/03-network/03-05_host-vethernet-ip.png) — Verified host vEthernet is **198.51.100.1/24**.
 - [03-06 — Host vEthernet IP set](../screenshots/03-network/03-06_host-vethernet-ip-set.png) — Confirmed internal adapter config applied.
 - [03-07 — DC-1 ping host success](../screenshots/03-network/03-07_dc1-ping-host-success.png) — Verified DC-1 can reach host over internal vSwitch.
 - [03-09 — Network profile](../screenshots/03-network/03-09_network-profile.png) — Verified current network profile state.

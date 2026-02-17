@@ -42,7 +42,7 @@ Last reviewed: February 13, 2026
 
 Allowed:
 - VM settings and lab configuration screens
-- Internal IPs (e.g., `10.10.10.x`)
+- Internal IPs (e.g., `198.51.100.x`)
 - Lab domain names (e.g., `lab.local`)
 
 Do not publish:
