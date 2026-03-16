@@ -100,6 +100,12 @@ Build a Windows Server 2022 Domain Controller in Hyper-V with **AD DS + DNS**, u
 - [05-08 — Prerequisites pass](../screenshots/05-domain-join/05-08_prerequisites-pass.png) — All prerequisite checks passed.
 - [05-09 — Promotion installing](../screenshots/05-domain-join/05-09_promotion-installing.png) — Promotion process running (DC configuration + reboot).
 - [05-10 — Post-promo logon (LAB\Administrator)](../screenshots/05-domain-join/05-10_post-promo-logon-domain.png) — Confirmed domain logon format after promotion.
+- [05-11 — Get-ADForest success](../screenshots/05-domain-join/05-11_get-adforest-success.png) — Confirmed the forest object returns expected values.
+- [05-11 — Get-ADDomain success](../screenshots/05-domain-join/05-11_get-addomain-success.png) — Confirmed the domain object returns expected values.
+- [05-12 — dcdiag DNS summary](../screenshots/05-domain-join/05-12_dcdiag-dns-summary.png) — Captured the DNS test summary showing `lab.local` passed.
+- [05-12 — dcdiag DNS verbose](../screenshots/05-domain-join/05-12_dcdiag-dns-verbose.png) — Captured verbose DNS validation details for the domain controller.
+- [05-13 — ADUC domain tree](../screenshots/05-domain-join/05-13_aduc-domain-tree.png) — Confirmed `lab.local` appears correctly in Active Directory Users and Computers.
+- [05-14 — DNS zones](../screenshots/05-domain-join/05-14_dns-zones.png) — Confirmed the forward lookup zones and related AD-integrated DNS structure were created.
 
 </details>
 
@@ -116,10 +122,17 @@ I verified core AD DS + DNS health on DC-1 after promotion.
   - `Get-ADForest`
   - `Get-ADDomain`
 
+Supporting evidence:
+- [05-11 — Get-ADForest success](../screenshots/05-domain-join/05-11_get-adforest-success.png)
+- [05-11 — Get-ADDomain success](../screenshots/05-domain-join/05-11_get-addomain-success.png)
+- [05-12 — dcdiag DNS summary](../screenshots/05-domain-join/05-12_dcdiag-dns-summary.png)
+- [05-13 — ADUC domain tree](../screenshots/05-domain-join/05-13_aduc-domain-tree.png)
+- [05-14 — DNS zones](../screenshots/05-domain-join/05-14_dns-zones.png)
+
 --
 
 ## Notes / Next Labs
 
 - Lab 01 is complete once AD DS + DNS are installed, the server is promoted, and validation passes.
 - Optional “post-build baseline” steps (like creating OUs/users/groups and building GPOs) can be included here or moved into a separate lab depending on how you want to structure the repo.
-
+- Screenshots in this repo have been cropped to remove host-side VM window chrome where possible while preserving the lab evidence itself.

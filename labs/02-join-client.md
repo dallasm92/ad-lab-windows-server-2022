@@ -21,6 +21,13 @@ Join a Windows client VM to the `lab.local` domain and verify domain authenticat
 ## Evidence (Screenshots)
 - `screenshots/05-domain-join/`
 
+Current repo evidence is server-side only:
+- [05-11 — Get-ADForest success](../screenshots/05-domain-join/05-11_get-adforest-success.png)
+- [05-11 — Get-ADDomain success](../screenshots/05-domain-join/05-11_get-addomain-success.png)
+- [05-13 — ADUC domain tree](../screenshots/05-domain-join/05-13_aduc-domain-tree.png)
+
+Client-side join screenshots can be added later to document the workstation flow directly.
+
 ## Steps
 
 ### 1) Confirm Client Network and DNS
@@ -83,6 +90,12 @@ Get-ADComputer -Identity WIN11-CLIENT1
 - Domain user logon successful on client
 - Client resolves domain via DC DNS
 - Client computer object present in AD
+
+Suggested future evidence to add:
+- client `ipconfig /all`
+- successful `Add-Computer` or GUI join screen
+- post-reboot domain sign-in
+- `Get-ADComputer` result from DC-1
 
 ## Issues and Fixes
 Common issue: domain join fails with "domain not found"

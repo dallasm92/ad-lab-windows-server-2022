@@ -15,6 +15,11 @@ Create a basic organizational model in Active Directory, provision users/groups,
 - `screenshots/06-users-groups/`
 - `screenshots/07-gpos/`
 
+Current screenshots in repo:
+- [06-01 — Create OUs](../screenshots/06-users-groups/06-01_aduc-create-ous.png)
+- [06-02 — Groups view](../screenshots/06-users-groups/06-02_aduc-groups-view.png)
+- [06-03 — Group membership (Helpdesk)](../screenshots/06-users-groups/06-03_group-membership-helpdesk.png)
+
 ## Steps
 
 ### 1) Create OU Structure
@@ -25,6 +30,10 @@ Example OU design:
 
 In ADUC:
 - Right-click domain -> New -> Organizational Unit
+
+Evidence:
+- [06-01 — Create OUs](../screenshots/06-users-groups/06-01_aduc-create-ous.png)
+- [06-02 — Groups view](../screenshots/06-users-groups/06-02_aduc-groups-view.png)
 
 ### 2) Create Users and Groups
 Example users:
@@ -47,6 +56,9 @@ Verification in PowerShell:
 Get-ADUser dmorison -Properties MemberOf
 Get-ADGroupMember "GG-Lab-FileShare-Modify"
 ```
+
+Evidence:
+- [06-03 — Group membership (Helpdesk)](../screenshots/06-users-groups/06-03_group-membership-helpdesk.png)
 
 ### 4) Create and Link a Basic GPO
 Example baseline GPO:
@@ -88,3 +100,5 @@ Common issue: user/group confusion
 - Keep OU/group naming conventions simple and consistent.
 - Validate each AD change with command output, not UI only.
 - Use a "test user + test client" pair before broad policy rollout.
+- GPO screenshots are still pending; this lab currently documents OU, user, and group structure more strongly than policy evidence.
+- User/group screenshots were trimmed to favor generic helpdesk-style examples over more personal account labels.
