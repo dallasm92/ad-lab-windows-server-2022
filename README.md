@@ -2,7 +2,7 @@
 
 Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V.  
 Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
-Last reviewed: February 13, 2026
+Last reviewed: March 12, 2026
 
 ## Quick start (recommended order)
 
@@ -51,6 +51,10 @@ Do not publish:
 
 If sensitive information appears:
 - Re-take the screenshot with the sensitive area hidden, or blur it before uploading.
+
+Current evidence note:
+- AD domain-controller and OU/group screenshots are present and cleaned for portfolio use.
+- Client-domain-join and GPO evidence are still lighter and can be expanded later.
 
 ## Screenshot naming convention
 
