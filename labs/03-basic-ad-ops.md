@@ -105,5 +105,5 @@ Common issue: user/group confusion
 - Keep OU/group naming conventions simple and consistent.
 - Validate each AD change with command output, not UI only.
 - Use a "test user + test client" pair before broad policy rollout.
-- Workstation GPO screenshots are still pending; this lab currently documents OU, user, group, and domain-controller logon-right troubleshooting more strongly than workstation policy enforcement.
+- Workstation baseline policy enforcement is future scope. This lab currently documents OU, user, group, and domain-controller logon-right troubleshooting more strongly than workstation policy enforcement.
 - User/group screenshots were trimmed to favor generic helpdesk-style examples over more personal account labels.
