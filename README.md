@@ -23,6 +23,16 @@ Last reviewed: April 21, 2026
 - Troubleshooting around username format, missing RSAT tools, domain-controller logon rights, Group Policy refresh, and UAC/elevation boundaries
 - Documentation quality aligned with IT support / junior sysadmin expectations
 
+## Hiring Manager Quick View
+
+| Review area | Evidence |
+|---|---|
+| Server build | Hyper-V VM creation, Windows Server install, static IP, AD DS/DNS promotion |
+| Client support | Windows 11 client setup, static IP/DNS, domain join, domain sign-in validation |
+| Identity basics | Helpdesk user, `GG_Helpdesk` group, ADUC membership validation |
+| Troubleshooting | wrong username format, no internet/RSAT limitation, logon-right failure, `gpupdate /force`, UAC/elevation boundary |
+| Proof style | 100+ screenshots organized by lab phase with step-by-step markdown labs |
+
 ## Repository layout
 
 - `docs/` — documentation standards
@@ -63,7 +73,7 @@ Current evidence note:
 - AD domain-controller and OU/group screenshots are present and cleaned for portfolio use.
 - Client-domain-join and helpdesk delegation troubleshooting evidence are now present.
 - The April 21 screenshot intake reviewed 80 source screenshots and added 44 curated screenshots.
-- GPO evidence is stronger for domain-controller logon-right troubleshooting than for workstation baseline policy enforcement.
+- Current GPO evidence focuses on domain-controller logon-right troubleshooting. Workstation baseline policy enforcement is intentionally left as a future lab topic rather than claimed here.
 - The repo documents the actual isolated lab subnet because the lab has no internet path and the addressing is not sensitive.
 
 ## Screenshot naming convention
