@@ -2,13 +2,14 @@
 
 Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V.  
 Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
-Last reviewed: April 13, 2026
+Last reviewed: April 21, 2026
 
 ## Quick start (recommended order)
 
 1. **Lab 01 — Build Domain Controller (DC-1)**
 2. **Lab 02 — Join a Windows client to the domain**
 3. **Lab 03 — Basic AD operations (OUs, users, groups, basic GPO)**
+4. **Lab 04 — Helpdesk delegation troubleshooting**
 
 > Tip: Each lab includes **Validation** so you can prove it’s working (commands + expected results).
 
@@ -18,6 +19,8 @@ Last reviewed: April 13, 2026
 - Lab networking fundamentals (internal subnet, static IP, DNS pointing to the DC)
 - Domain join workflow for a client machine
 - Core AD operations: OUs, users, groups, and basic Group Policy
+- Helpdesk user/group validation from a domain-joined Windows 11 client
+- Troubleshooting around username format, missing RSAT tools, domain-controller logon rights, Group Policy refresh, and UAC/elevation boundaries
 - Documentation quality aligned with IT support / junior sysadmin expectations
 
 ## Repository layout
@@ -25,6 +28,7 @@ Last reviewed: April 13, 2026
 - `docs/` — documentation standards
   - `screenshot-rules.md`
   - `screenshot-naming.md`
+  - `screenshot-review-2026-04-21.md`
 - `screenshots/` — evidence organized by phase
   - `01-vm-create/`
   - `02-install/`
@@ -33,16 +37,19 @@ Last reviewed: April 13, 2026
   - `05-domain-join/`
   - `06-users-groups/`
   - `07-gpos/`
+  - `08-client-join/`
+  - `09-helpdesk-delegation/`
 - `labs/` — step-by-step lab writeups
   - `01-build-domain-controller.md`
   - `02-join-client.md`
   - `03-basic-ad-ops.md`
+  - `04-helpdesk-delegation-troubleshooting.md`
 
 ## Screenshot safety (sanitization)
 
 Allowed:
 - VM settings and lab configuration screens
-- Internal IPs (e.g., `198.51.100.x`)
+- Isolated lab IPs (e.g., `10.10.10.x`)
 - Lab domain names (e.g., `lab.local`)
 
 Do not publish:
@@ -54,7 +61,10 @@ If sensitive information appears:
 
 Current evidence note:
 - AD domain-controller and OU/group screenshots are present and cleaned for portfolio use.
-- Client-domain-join and GPO evidence are still lighter and can be expanded later.
+- Client-domain-join and helpdesk delegation troubleshooting evidence are now present.
+- The April 21 screenshot intake reviewed 80 source screenshots and added 44 curated screenshots.
+- GPO evidence is stronger for domain-controller logon-right troubleshooting than for workstation baseline policy enforcement.
+- The repo documents the actual isolated lab subnet because the lab has no internet path and the addressing is not sensitive.
 
 ## Screenshot naming convention
 
