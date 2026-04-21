@@ -19,6 +19,9 @@ Current screenshots in repo:
 - [06-01 — Create OUs](../screenshots/06-users-groups/06-01_aduc-create-ous.png)
 - [06-02 — Groups view](../screenshots/06-users-groups/06-02_aduc-groups-view.png)
 - [06-03 — Group membership (Helpdesk)](../screenshots/06-users-groups/06-03_group-membership-helpdesk.png)
+- [09-01 — Helpdesk user present in ADUC](../screenshots/09-helpdesk-delegation/09-01_aduc-helpdesk-user-present.png)
+- [09-02 — Helpdesk user is member of `Domain Users` and `GG_Helpdesk`](../screenshots/09-helpdesk-delegation/09-02_helpdesk-user-member-of-gg-helpdesk.png)
+- [09-03 — Lab Users OU shows helpdesk and test users](../screenshots/09-helpdesk-delegation/09-03_aduc-lab-users-list.png)
 
 ## Steps
 
@@ -39,10 +42,12 @@ Evidence:
 Example users:
 - `dmorison`
 - `testuser1`
+- `Helpdesk.User`
 
 Example groups:
 - `GG-Lab-FileShare-Read`
 - `GG-Lab-FileShare-Modify`
+- `GG_Helpdesk`
 
 Group guidance:
 - Use Global Security groups for user access assignment in a single domain lab.
@@ -100,5 +105,5 @@ Common issue: user/group confusion
 - Keep OU/group naming conventions simple and consistent.
 - Validate each AD change with command output, not UI only.
 - Use a "test user + test client" pair before broad policy rollout.
-- GPO screenshots are still pending; this lab currently documents OU, user, and group structure more strongly than policy evidence.
+- Workstation GPO screenshots are still pending; this lab currently documents OU, user, group, and domain-controller logon-right troubleshooting more strongly than workstation policy enforcement.
 - User/group screenshots were trimmed to favor generic helpdesk-style examples over more personal account labels.
