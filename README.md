@@ -4,6 +4,9 @@ Hands-on Active Directory home lab built on Windows Server 2022 in Hyper-V.
 Documented with repeatable build steps, validation checks, troubleshooting notes, and sanitized screenshots for portfolio use.
 Last reviewed: April 21, 2026
 
+Social preview asset:
+- [assets/social-preview.png](assets/social-preview.png)
+
 ## Quick start (recommended order)
 
 1. **Lab 01 — Build Domain Controller (DC-1)**
